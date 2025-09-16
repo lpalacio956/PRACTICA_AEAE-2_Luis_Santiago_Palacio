@@ -14,9 +14,12 @@ namespace Pantallas_Sistema_Facturacion
 {
     public partial class FrmPrincipal : MaterialForm
     {
-        public FrmPrincipal()
+        private string usuarioActual;
+
+        public FrmPrincipal(string usuario)
         {
             InitializeComponent();
+            usuarioActual = usuario;
         }
         private void AbrirForm(Form formHijo)
         {
@@ -35,8 +38,19 @@ namespace Pantallas_Sistema_Facturacion
 
         private void btnClientes_Click(object sender, EventArgs e)
         {
-            frmCliente frmCliente = new frmCliente();
-            AbrirForm(frmCliente);
+            frmListaClientes frmListaClientes = new frmListaClientes();
+            AbrirForm(frmListaClientes);
+        }
+
+        private void pnlContenedor_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnSeguridad_Click(object sender, EventArgs e)
+        {
+            frmSeguridad frmSeguridad = new frmSeguridad(usuarioActual);
+            AbrirForm(frmSeguridad);
         }
     }
 }

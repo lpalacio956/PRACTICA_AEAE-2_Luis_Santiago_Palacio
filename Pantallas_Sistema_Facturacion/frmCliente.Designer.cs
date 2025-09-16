@@ -36,7 +36,7 @@
             this.txtDireccion = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.txtDocumento = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.txtNombreCliente = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.btnActualizar = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.btnCrear = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnSalir = new MaterialSkin.Controls.MaterialRaisedButton();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -45,12 +45,13 @@
             // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Depth = 0;
-            this.lblTitulo.Font = new System.Drawing.Font("Algerian", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.ForeColor = System.Drawing.Color.Maroon;
-            this.lblTitulo.Location = new System.Drawing.Point(24, 11);
+            this.lblTitulo.Font = new System.Drawing.Font("Roboto", 11F);
+            this.lblTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblTitulo.Location = new System.Drawing.Point(32, 14);
+            this.lblTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitulo.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(261, 24);
+            this.lblTitulo.Size = new System.Drawing.Size(244, 24);
             this.lblTitulo.TabIndex = 0;
             this.lblTitulo.Text = "NUEVO REGISTRO CLIENTE";
             // 
@@ -58,7 +59,8 @@
             // 
             this.txtId.Depth = 0;
             this.txtId.Hint = "";
-            this.txtId.Location = new System.Drawing.Point(28, 54);
+            this.txtId.Location = new System.Drawing.Point(37, 66);
+            this.txtId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtId.MaxLength = 32767;
             this.txtId.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtId.Name = "txtId";
@@ -66,7 +68,7 @@
             this.txtId.SelectedText = "";
             this.txtId.SelectionLength = 0;
             this.txtId.SelectionStart = 0;
-            this.txtId.Size = new System.Drawing.Size(75, 23);
+            this.txtId.Size = new System.Drawing.Size(100, 28);
             this.txtId.TabIndex = 1;
             this.txtId.TabStop = false;
             this.txtId.UseSystemPasswordChar = false;
@@ -80,16 +82,18 @@
             this.panel1.Controls.Add(this.txtDireccion);
             this.panel1.Controls.Add(this.txtDocumento);
             this.panel1.Controls.Add(this.txtNombreCliente);
-            this.panel1.Location = new System.Drawing.Point(12, 81);
+            this.panel1.Location = new System.Drawing.Point(16, 100);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(381, 263);
+            this.panel1.Size = new System.Drawing.Size(508, 324);
             this.panel1.TabIndex = 2;
             // 
             // txtEmail
             // 
             this.txtEmail.Depth = 0;
             this.txtEmail.Hint = "Email";
-            this.txtEmail.Location = new System.Drawing.Point(28, 199);
+            this.txtEmail.Location = new System.Drawing.Point(37, 245);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtEmail.MaxLength = 32767;
             this.txtEmail.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtEmail.Name = "txtEmail";
@@ -97,7 +101,7 @@
             this.txtEmail.SelectedText = "";
             this.txtEmail.SelectionLength = 0;
             this.txtEmail.SelectionStart = 0;
-            this.txtEmail.Size = new System.Drawing.Size(332, 23);
+            this.txtEmail.Size = new System.Drawing.Size(443, 28);
             this.txtEmail.TabIndex = 6;
             this.txtEmail.TabStop = false;
             this.txtEmail.UseSystemPasswordChar = false;
@@ -106,7 +110,8 @@
             // 
             this.txtTelefono.Depth = 0;
             this.txtTelefono.Hint = "Telefono";
-            this.txtTelefono.Location = new System.Drawing.Point(28, 170);
+            this.txtTelefono.Location = new System.Drawing.Point(37, 209);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTelefono.MaxLength = 32767;
             this.txtTelefono.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtTelefono.Name = "txtTelefono";
@@ -114,7 +119,7 @@
             this.txtTelefono.SelectedText = "";
             this.txtTelefono.SelectionLength = 0;
             this.txtTelefono.SelectionStart = 0;
-            this.txtTelefono.Size = new System.Drawing.Size(332, 23);
+            this.txtTelefono.Size = new System.Drawing.Size(443, 28);
             this.txtTelefono.TabIndex = 5;
             this.txtTelefono.TabStop = false;
             this.txtTelefono.UseSystemPasswordChar = false;
@@ -123,7 +128,8 @@
             // 
             this.txtDireccion.Depth = 0;
             this.txtDireccion.Hint = "Direccion";
-            this.txtDireccion.Location = new System.Drawing.Point(28, 141);
+            this.txtDireccion.Location = new System.Drawing.Point(37, 174);
+            this.txtDireccion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDireccion.MaxLength = 32767;
             this.txtDireccion.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtDireccion.Name = "txtDireccion";
@@ -131,7 +137,7 @@
             this.txtDireccion.SelectedText = "";
             this.txtDireccion.SelectionLength = 0;
             this.txtDireccion.SelectionStart = 0;
-            this.txtDireccion.Size = new System.Drawing.Size(332, 23);
+            this.txtDireccion.Size = new System.Drawing.Size(443, 28);
             this.txtDireccion.TabIndex = 4;
             this.txtDireccion.TabStop = false;
             this.txtDireccion.UseSystemPasswordChar = false;
@@ -140,7 +146,8 @@
             // 
             this.txtDocumento.Depth = 0;
             this.txtDocumento.Hint = "Documento";
-            this.txtDocumento.Location = new System.Drawing.Point(28, 112);
+            this.txtDocumento.Location = new System.Drawing.Point(37, 138);
+            this.txtDocumento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDocumento.MaxLength = 32767;
             this.txtDocumento.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtDocumento.Name = "txtDocumento";
@@ -148,7 +155,7 @@
             this.txtDocumento.SelectedText = "";
             this.txtDocumento.SelectionLength = 0;
             this.txtDocumento.SelectionStart = 0;
-            this.txtDocumento.Size = new System.Drawing.Size(332, 23);
+            this.txtDocumento.Size = new System.Drawing.Size(443, 28);
             this.txtDocumento.TabIndex = 3;
             this.txtDocumento.TabStop = false;
             this.txtDocumento.UseSystemPasswordChar = false;
@@ -157,7 +164,8 @@
             // 
             this.txtNombreCliente.Depth = 0;
             this.txtNombreCliente.Hint = "Nombre Cliente";
-            this.txtNombreCliente.Location = new System.Drawing.Point(28, 83);
+            this.txtNombreCliente.Location = new System.Drawing.Point(37, 102);
+            this.txtNombreCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNombreCliente.MaxLength = 32767;
             this.txtNombreCliente.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtNombreCliente.Name = "txtNombreCliente";
@@ -165,26 +173,28 @@
             this.txtNombreCliente.SelectedText = "";
             this.txtNombreCliente.SelectionLength = 0;
             this.txtNombreCliente.SelectionStart = 0;
-            this.txtNombreCliente.Size = new System.Drawing.Size(332, 23);
+            this.txtNombreCliente.Size = new System.Drawing.Size(443, 28);
             this.txtNombreCliente.TabIndex = 2;
             this.txtNombreCliente.TabStop = false;
             this.txtNombreCliente.UseSystemPasswordChar = false;
             // 
-            // btnActualizar
+            // btnCrear
             // 
-            this.btnActualizar.AutoSize = true;
-            this.btnActualizar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnActualizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnActualizar.Depth = 0;
-            this.btnActualizar.Icon = null;
-            this.btnActualizar.Location = new System.Drawing.Point(40, 382);
-            this.btnActualizar.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Primary = true;
-            this.btnActualizar.Size = new System.Drawing.Size(103, 36);
-            this.btnActualizar.TabIndex = 3;
-            this.btnActualizar.Text = "ACTUALIZAR";
-            this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnCrear.AutoSize = true;
+            this.btnCrear.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnCrear.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCrear.Depth = 0;
+            this.btnCrear.Icon = null;
+            this.btnCrear.Location = new System.Drawing.Point(53, 470);
+            this.btnCrear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCrear.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnCrear.Name = "btnCrear";
+            this.btnCrear.Primary = true;
+            this.btnCrear.Size = new System.Drawing.Size(95, 45);
+            this.btnCrear.TabIndex = 3;
+            this.btnCrear.Text = "CREAR";
+            this.btnCrear.UseVisualStyleBackColor = true;
+            this.btnCrear.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // btnSalir
             // 
@@ -193,26 +203,29 @@
             this.btnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSalir.Depth = 0;
             this.btnSalir.Icon = null;
-            this.btnSalir.Location = new System.Drawing.Point(245, 382);
+            this.btnSalir.Location = new System.Drawing.Point(327, 470);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSalir.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Primary = true;
-            this.btnSalir.Size = new System.Drawing.Size(58, 36);
+            this.btnSalir.Size = new System.Drawing.Size(69, 36);
             this.btnSalir.TabIndex = 4;
             this.btnSalir.Text = "SALIR";
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click_1);
             // 
             // frmCliente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(407, 450);
+            this.ClientSize = new System.Drawing.Size(543, 554);
             this.Controls.Add(this.btnSalir);
-            this.Controls.Add(this.btnActualizar);
+            this.Controls.Add(this.btnCrear);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ACTUALIZAR CLIENTE";
+            this.Text = "CREAR CLIENTE";
             this.Load += new System.EventHandler(this.frmEditarCliente_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -231,7 +244,7 @@
         private MaterialSkin.Controls.MaterialSingleLineTextField txtDireccion;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtDocumento;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtNombreCliente;
-        private MaterialSkin.Controls.MaterialRaisedButton btnActualizar;
+        private MaterialSkin.Controls.MaterialRaisedButton btnCrear;
         private MaterialSkin.Controls.MaterialRaisedButton btnSalir;
     }
 }
